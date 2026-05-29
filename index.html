@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Salón de Belleza Glamour en Estado de México. Cortes, coloración, maquillaje y más. Estilo moderno y minimalista. ¡Agenda tu cita!">
+    <meta name="keywords" content="salón de belleza, Edo Mex, cortes, coloración, maquillaje, uñas, Glamour">
+    <meta name="author" content="Salón Glamour">
+    <meta property="og:title" content="Salón Glamour - Belleza y Estilo">
+    <meta property="og:description" content="Descubre nuestros servicios de alta calidad. Transformamos tu imagen con profesionalismo.">
+    <meta property="og:type" content="website">
+    <title>Salón Glamour | Belleza & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/525512345678?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header con menú hamburguesa -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Salón <span>Glamour</span></h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h2>Realza tu belleza natural</h2>
+                <p>Estilo, elegancia y tendencias en el corazón del Estado de México</p>
+                <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <i class="fas fa-cut"></i>
+                        <h3>Cortes y Peinados</h3>
+                        <p>Estilos modernos, clásicos o de tendencia. Asesoría personalizada.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Coloración</h3>
+                        <p>Balayage, reflejos, color completo y técnicas avanzadas.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <i class="fas fa-smile"></i>
+                        <h3>Maquillaje</h3>
+                        <p>Social, profesional o para eventos especiales.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <h3>Manicura y Pedicura</h3>
+                        <p>Esmaltado tradicional, gelish y cuidado de pies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contadores animados (estadísticas) -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1520">0</span>
+                    <p>Clientes felices</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="12">0</span>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">0</span>
+                    <p>Estilistas expertos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Galería con carrusel -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2 class="section-title">Galería de inspiración</h2>
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="carouselSlide">
+                        <!-- Las imágenes se inyectan con JS -->
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <div class="contacto-wrapper">
+                    <div class="contacto-info">
+                        <h3>Salón Glamour</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Satélite 123, Naucalpan, Estado de México, CP 53100</p>
+                        <p><i class="fas fa-phone-alt"></i> +52 55 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> contacto@salonglamour.mx</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contacto-form">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué servicio te interesa?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Salón Glamour - Todos los derechos reservados.</p>
+            <p>Diseño moderno y minimalista | Estado de México</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
